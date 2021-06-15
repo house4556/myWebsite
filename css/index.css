@@ -1,0 +1,48 @@
+:root {
+    /* ===== Colors ===== */
+    --text-color : #000;
+    --text-color-light : #5e5e5e;
+    /* ===== +색상 더 추가하기 ===== */
+    
+    --container-color : #fff;
+
+    /* ===== Font & Font Size ===== */
+    --body-font : 'Noto Sans KR', sans-serif;
+    --small-font-size : .75rem; /* 12px */
+    --middle-font-size : 0.938rem; /* 15px */
+    --big-font-size : 1.5rem; /* 24px */
+
+    /* ===== Font Weight ===== */
+    --font-medium : 500;
+    --font-bold : 700;
+
+    /* ===== Z-index ===== */
+    z-index: 100;
+}
+
+/* ===== Initial Setting ===== */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: var(--body-font);
+    font-size: var(--middle-font-size);
+    color: var(--text-color);
+}
+
+/* ===== Header ===== */
+/* ===== Nav ===== */
+/* ===== Section ===== */
+/* ===== Aside ===== */
+/* ===== Footer ===== */
