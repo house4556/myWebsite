@@ -1,35 +1,50 @@
 :root {
-    /* ===== Colors ===== */
-    --text-color : #000;
-    --text-color-light : #5e5e5e;
-    /* ===== +색상 더 추가하기 ===== */
-    
-    --container-color : #fff;
 
     /* ===== Font & Font Size ===== */
-    --body-font : 'Noto Sans KR', sans-serif;
-    --small-font-size : .75rem; /* 12px */
-    --middle-font-size : 0.938rem; /* 15px */
-    --big-font-size : 1.5rem; /* 24px */
+    --body-font: 'Noto Sans KR', sans-serif;
+
+    --font-semi-size: .75rem;
+    /* 12px */
+    --font-nomarl-size: .937rem;
+    /* 15px */
+    --font-middle-size: 1.25rem;
+    /* 20px */
+    --font-big-size: 1.5rem;
+    /* 24px */
+    --font-nmbig-size: 2rem;
+    /* 32px */
+    --font-mrbig-size: 3rem;
+    /* 48px */
+
+    /* ===== Font Colors ===== */
+    --black-color: #17202A;
+    --white-color: #fff;
+
+    /* ===== Background Colors */
 
     /* ===== Font Weight ===== */
-    --font-medium : 500;
-    --font-bold : 700;
+    --font-nomal-bold: 400;
+    --font-semi-bold: 500;
+    --font-bold: 700;
 
     /* ===== Z-index ===== */
-    z-index: 100;
+    --z-index: 100;
 }
 
 /* ===== Initial Setting ===== */
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+    color: var(--black-color);
 }
 
-ul,li {
+ul,
+li {
     list-style: none;
 }
 
@@ -37,12 +52,261 @@ body {
     margin: 0;
     padding: 0;
     font: var(--body-font);
-    font-size: var(--middle-font-size);
-    color: var(--text-color);
+    font-size: var(--font-nomarl-size);
+    background-color: var(--all-background-color);
 }
 
 /* ===== Header ===== */
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.75rem;
+}
+
+.header__title {
+    font-size: var(--font-big-size);
+    font-weight: bold;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu li {
+    padding: 0 1rem;
+    font-weight: var(--font-bold);
+}
+
+.header__login_btn {
+    padding: .5rem 1rem;
+    margin: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.header__my {
+    display: flex;
+    align-items: center;
+}
+
+.bx-search-alt {
+    font-size: var(--font-middle-size);
+    margin-right: 1.5rem;
+}
+
 /* ===== Nav ===== */
+nav.nav {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.slide_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 1.5;
+    -webkit-transition: all 1.5;
+    -moz-transition: all 1.5;
+    -ms-transition: all 1.5;
+    -o-transition: all 1.5;
+}
+
+.slide_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slide_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.img_btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.img_btn>i {
+    font-size: var(--font-mrbig-size);
+}
+
+.img__previous_btn {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: var(--z-index);
+    cursor: pointer;
+}
+
+.img__next_btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    z-index: var(--z-index);
+    cursor: pointer;
+}
+
 /* ===== Section ===== */
-/* ===== Aside ===== */
+.section__container {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.section__title {
+    font-size: var(--font-nmbig-size);
+    margin-top: 5rem;
+}
+
+.cate__container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.grid__product {
+    border-radius: 1rem;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    margin-top: 2rem;
+}
+
+.img__product {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+
+.grid__product_text {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.grid__title {
+    letter-spacing: .3rem;
+    margin: 1rem 0;
+}
+
+.grid__button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: .8rem 1.5rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: .5rem;
+    font-weight: var(--font-semi-bold);
+    letter-spacing: .1rem;
+}
+
+.we__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.we__product {
+    border-radius: 1rem;
+    width: 95%;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    margin-top: 2rem;
+}
+
+.img__we_product {
+    width: 200px;
+    height: 200px;
+}
+
 /* ===== Footer ===== */
+
+.footer__container {
+    background-color: var(--black-color);
+    margin-top: 5rem;
+    font-size: var(--font-semi-size);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem 5rem;
+    color: var(--white-color);
+}
+
+.footer__container a {
+    color: var(--white-color);
+}
+
+.footer__container li {
+    padding: .5rem 0;
+}
+
+.footer__follow a {
+    font-size: var(--font-big-size);
+}
+
+.footer__title {
+    font-size: var(--font-nmbig-size);
+}
+
+.footer__follow {
+    display: grid;
+}
+
+/* ===== @media Query ===== */
+@media screen and (max-width : 1248px) {
+    .cate__container {
+        grid-template-columns: repeat(2, 4fr);
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    .cate__container {
+        grid-template-columns: repeat(1, 6fr);
+    }   
+    .we__container {
+        grid-template-columns: repeat(1, 6fr);
+    }
+    .footer__container {
+        grid-template-columns: repeat(1, 4fr);
+    }
+}

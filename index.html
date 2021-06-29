@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>베뭉산 - 베트남 뭉쳐서 산다(We Live Together in Vietnam)</title>
 
     <!-- ======== CSS ======= -->
     <link rel="stylesheet" href="./css/index.css">
 
     <!-- ======== Box Icons ======= -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- FontAwesomne -->
+    <script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
 
     <!-- ======== Font ======= -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,20 +22,204 @@
 </head>
 <body>
     <!-- ======= Header ======= -->
-    <header class="header"></header>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="#" class="header__title">WTLV.</a>
+            </div>
+            <div class="header__menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            <div class="header__my">
+                <i class='bx bx-search-alt' ></i>
+                <button class="header__login_btn">Log In</button>
+            </div>
+        </div>
+    </header>
 
-    <!-- ======= Nav =======-->
-    <nav class="nav"></nav>
+    <!-- ======= Nav ======== -->
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container">
+                <button class="img_btn img__previous_btn"><i class='bx bx-left-arrow-circle'></i></button>
+                <button class="img_btn img__next_btn"><i class='bx bx-right-arrow-circle' ></i></button>
+                
+                <div class="slide_img active">
+                    <img src="./img/exam1.jpg" alt="">
+                    <div class="slide_text">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="slide_img">
+                    <img src="./img/exam2.jpg" alt="">
+                    <div class="slide_text">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="slide_img">
+                    <img src="./img/exam3.jpg" alt="">
+                    <div class="slide_text">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="slide_img">
+                    <img src="./img/exam4.jpg" alt="">
+                    <div class="slide_text">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- ======= Section ======= -->
-    <section class="section"></section>
+    <section class="section">
+        <div class="section__container">
+            <h2 class="section__title">Category</h2>
+            <p class="section__sub">다양한 카테고리를 한눈에 보기</p>
+            <div class="cate__container">
+                <div class="grid__product">
+                    <img src="./img/Food_img.png" alt="" class="img__product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">Find Restaurant</p>
+                        <h2 class="grid__title">음식점</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
 
-    <!-- ======= Asdie ======= -->
-    <aside class="aside"></aside>
+                <div class="grid__product">
+                    <img src="./img/Food_img.png" alt="" class="img__product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">Playing & Culture</p>
+                        <h2 class="grid__title">놀거리</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
 
-    <!-- ======= footer ======= -->
-    <footer class="footer"></footer>
+                <div class="grid__product">
+                    <img src="./img/Food_img.png" alt="" class="img__product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">Sports</p>
+                        <h2 class="grid__title">스포츠</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
 
+                <div class="grid__product">
+                    <img src="./img/used.png" alt="" class="img__product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">Second Used</p>
+                        <h2 class="grid__title">중고장터</h2>
+                        <a href="#"><button class="grid__button">바로가기</button></a>
+                    </div>
+                </div>
+
+                <div class="grid__product">
+                    <img src="./img/company.png" alt="" class="img__product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">Find People & Company</p>
+                        <h2 class="grid__title">구인/구직</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
+
+                <div class="grid__product">
+                    <img src="./img/Food_img.png" alt="" class="img__product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">Events</p>
+                        <h2 class="grid__title">이벤트</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section__title">Contact Us</h2>
+            <p class="section__sub">불편사항 및 저희에게 연락을 하고싶으실 때</p>
+
+            <div class="we__container">
+                <div class="we__product">
+                    <img src="./img/error.png" alt="" class="img__we_product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">이용하시는데 불편하시다면</p>
+                        <h2 class="grid__title">Error Send</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
+
+                <div class="we__product">
+                    <img src="./img/contact.png" alt="" class="img__we_product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">저희 홈페이지에 올리고 싶으시다면</p>
+                        <h2 class="grid__title">Contact Me</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad__container">
+
+            </div>
+
+            <h2 class="section__title">Cooperation</h2>
+            <p class="section__sub">저희와 함께하고 있는 분들</p>
+
+            <div class="coo__container">
+                <div class="we__product">
+                    <img src="./img/contact.png" alt="" class="img__we_product">
+                    <div class="grid__product_text">
+                        <p class="grid__sub">저희 홈페이지에 올리고 싶으시다면</p>
+                        <h2 class="grid__title">Contact Me</h2>
+                        <button class="grid__button">바로가기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__my">
+                <a href="">
+                    <h2 class="footer__title">WTLV.</h2>
+                </a>
+            </div>
+            <div class="footer__explore">
+                <h2>Explore</h2>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Event</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </div>
+            <div class="footer__services">
+                <h2>Our Services</h2>
+                <li><a href="">Food</a></li>
+                <li><a href="">Playing</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Second Used</a></li>
+                <li><a href="">Second Used</a></li>
+                <li><a href="">Find</a></li>
+                <li><a href="">Event</a></li>
+            </div>
+            <div class="footer__follow">
+                <h2>Follows</h2>
+                <a href=""><i class='bx bxl-youtube'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href=""><i class='bx bxl-blogger'></i></a>
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
 </html>
